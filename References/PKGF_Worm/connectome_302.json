@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "source": "C. elegans Connectome (Representative Model for PKGF)",
+    "neuron_count": 302,
+    "total_synapses": 8,
+    "total_gap_junctions": 4
+  },
+  "neurons": [
+    {
+      "name": "ALML",
+      "type": "Sensory",
+      "function": "Touch sensitive",
+      "sector_hint": "Subject",
+      "connections": [
+        {"target": "AVBL", "type": "synapse", "weight": 1.5},
+        {"target": "AVAL", "type": "synapse", "weight": 0.5},
+        {"target": "ALMR", "type": "gap_junction", "weight": 1.0}
+      ]
+    },
+    {
+      "name": "ALMR",
+      "type": "Sensory",
+      "function": "Touch sensitive",
+      "sector_hint": "Subject",
+      "connections": [
+        {"target": "AVBR", "type": "synapse", "weight": 1.5},
+        {"target": "AVAR", "type": "synapse", "weight": 0.5},
+        {"target": "ALML", "type": "gap_junction", "weight": 1.0}
+      ]
+    },
+    {
+      "name": "AVAL",
+      "type": "Interneuron",
+      "function": "Command: Backward movement",
+      "sector_hint": "Entity",
+      "connections": [
+        {"target": "AVAR", "type": "gap_junction", "weight": 1.0}
+      ]
+    },
+    {
+      "name": "AVAR",
+      "type": "Interneuron",
+      "function": "Command: Backward movement",
+      "sector_hint": "Entity",
+      "connections": [
+        {"target": "AVAL", "type": "gap_junction", "weight": 1.0}
+      ]
+    },
+    {
+      "name": "AVBL",
+      "type": "Interneuron",
+      "function": "Command: Forward movement",
+      "sector_hint": "Entity",
+      "connections": [
+        {"target": "VB1", "type": "synapse", "weight": 2.0},
+        {"target": "AVBR", "type": "gap_junction", "weight": 1.0}
+      ]
+    },
+    {
+      "name": "AVBR",
+      "type": "Interneuron",
+      "function": "Command: Forward movement",
+      "sector_hint": "Entity",
+      "connections": [
+        {"target": "DB1", "type": "synapse", "weight": 2.0},
+        {"target": "AVBL", "type": "gap_junction", "weight": 1.0}
+      ]
+    },
+    {
+      "name": "DB1",
+      "type": "Motor",
+      "function": "Dorsal Muscle activation",
+      "sector_hint": "Action",
+      "connections": []
+    },
+    {
+      "name": "VB1",
+      "type": "Motor",
+      "function": "Ventral Muscle activation",
+      "sector_hint": "Action",
+      "connections": []
+    }
+  ]
+}

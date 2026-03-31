@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "source": "Minimal circuit for PKGF validation",
+    "neuron_count": 4
+  },
+  "neurons": [
+    {
+      "name": "ALML",
+      "type": "Sensory",
+      "sector_hint": "Subject",
+      "connections": [{"target": "AVBL", "weight": 1.0}]
+    },
+    {
+      "name": "AVBL",
+      "type": "Interneuron",
+      "sector_hint": "Entity",
+      "connections": [
+        {"target": "VB1", "weight": 1.0},
+        {"target": "DB1", "weight": 1.0}
+      ]
+    },
+    {
+      "name": "VB1",
+      "type": "Motor",
+      "sector_hint": "Action",
+      "connections": []
+    },
+    {
+      "name": "DB1",
+      "type": "Motor",
+      "sector_hint": "Action",
+      "connections": []
+    }
+  ]
+}
