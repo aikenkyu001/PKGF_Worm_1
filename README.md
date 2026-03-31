@@ -1,5 +1,7 @@
 # PKGF-Worm: Deterministic Connectome Dynamics Model
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19344285.svg)](https://doi.org/10.5281/zenodo.19344285)
+
 PKGF-Worm is a research project that maps the full connectome of *C. elegans* (302 neurons) onto the manifold structure of Parallel Key Geometric Flow (PKGF), a differential geometric theory of intelligence, to simulate deterministic neural and kinetic dynamics.
 
 This model demonstrates the emergence of **sustained non-equilibrium attractors with goal-directed bias** driven solely by geometric necessity on a manifold, without reliance on probabilistic frameworks or statistical optimization.

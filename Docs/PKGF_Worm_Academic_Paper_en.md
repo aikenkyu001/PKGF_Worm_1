@@ -1,7 +1,8 @@
 # Geometric Construction and Dynamical Analysis of a Deterministic Connectome Model (PKGF-Worm) Based on the 302-Node Architecture: Emergence of Sustained Non-equilibrium Attractors with Goal-directed Bias via Differential Geometric Flow
 
 **Author: Fumio Miyata**  
-**Date: March 31, 2026**
+**Date: March 31, 2026**  
+**DOI: [10.5281/zenodo.19344285](https://doi.org/10.5281/zenodo.19344285)**
 
 ---
 
